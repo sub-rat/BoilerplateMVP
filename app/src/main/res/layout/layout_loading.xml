@@ -1,0 +1,44 @@
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/loadingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:translationZ="5dp"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/spacing_8"
+            android:layout_marginTop="@dimen/spacing_8"
+            android:layout_marginEnd="@dimen/spacing_8"
+            android:layout_marginBottom="@dimen/spacing_8" />
+
+        <TextView
+            android:id="@+id/txtLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/progressBar"
+            android:layout_centerHorizontal="true"
+            android:text="@string/loading"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLoading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/spacing_16"
+            android:background="@drawable/corner_round_button_login"
+            android:padding="@dimen/spacing_16"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"
+            tools:text="Retry" />
+    </RelativeLayout>
+</layout>

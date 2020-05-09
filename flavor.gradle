@@ -1,0 +1,52 @@
+apply from: '../signing.gradle'
+android {
+    flavorDimensions "default"
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            versionNameSuffix '-debug'
+
+        }
+    }
+    productFlavors {
+//        live {
+//            applicationIdSuffix ".live"
+//            versionCode 1
+//            versionName "1.0"
+//            flavorDimensions "default"
+//            ext {
+//                server = [debug   : "http://live.example.com/mobapi/",
+//                          release : "http://live.example.com/mobapi/",
+//
+//                ]
+//            }
+//        }
+
+        demo {
+            applicationIdSuffix ".demo"
+            versionCode 1
+            versionName "1.0"
+            flavorDimensions "default"
+            ext {
+                server = [debug   : "http://demo.example.com/mobapi/",
+                          release : "http://demo.example.com/mobapi/"
+                ]
+            }
+        }
+
+    }
+    applicationVariants.all { variant ->
+        def flavor = variant.productFlavors[0]
+        println "Setting up server URL ${flavor.ext.server[variant.buildType.name]} for variant [${variant.name}]"
+        variant.buildConfigField "String", "SERVER_URL", "\"${flavor.ext.server[variant.buildType.name]}\""
+    }
+
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="spacing_16">16dp</dimen>
+    <dimen name="spacing_8">8dp</dimen>
+    <dimen name="spacing_4">4dp</dimen>
+    <dimen name="spacing_2">2dp</dimen>
+    <dimen name="badge_count_textsize">12sp</dimen>
+</resources>

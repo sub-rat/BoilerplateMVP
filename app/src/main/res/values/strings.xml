@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">BoilerplateMVP</string>
+    <string name="loading">Loading…</string>
+
+    //Exception messages
+    <string name="internet_conn_fail">No Internet Connection</string>
+    <string name="authenticating">Authenticating…</string>
+    <string name="json_exception">Error while parsing result</string>
+    <string name="db_not_available">Database not available</string>
+    <string name="invalid_credential">Invalid Credentials</string>
+    <string name="server_error">Server Error</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="username">Username</string>
+    <string name="Password">Password</string>
+    <string name="login">Login</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>
