@@ -1,10 +1,13 @@
 # BoilerplateMVP
 MVP boilerplate code to start a project. It has all required base classes and codes with dependency injection
 
-## Implementation
-* Dependency Injection ( Dagger)
+## Library Used
+* Dagger (Dependency Injection)
 * RxJava and RxAndroid
-* MVP structure
+* OkHttp 
 * Data Binding
-* Network Module
+* Retrofit
+* Room Database
+* Stetho
+* Gson
 
